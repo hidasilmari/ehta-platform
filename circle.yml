@@ -48,6 +48,7 @@ dependencies:
     - composer -n global require -n "hirak/prestissimo:^0.3"
     - /usr/bin/env COMPOSER_BIN_DIR=$HOME/bin composer -n --working-dir=$HOME require pantheon-systems/terminus "^1"
     - terminus -n --version
+    - composer config minimum-stability dev
     - /usr/bin/env COMPOSER_BIN_DIR=$HOME/bin composer -n --working-dir=$HOME require drush/drush "^9@beta"
     - mkdir -p ~/.terminus/plugins
     - composer -n create-project -d ~/.terminus/plugins pantheon-systems/terminus-build-tools-plugin:$BUILD_TOOLS_VERSION
